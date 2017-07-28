@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    title Jumbotron Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+    style.
+      body{
+      background:#f9f9f9;
+      }
+      #container{
+      width:700px;
+      margin:0 auto;
+      }
+      #chatWindow{
+      height:300px;
+      }
+      #mainWrapper{
+      display:none;
+      }
+      #chatWrapper{
+      float:left;
+      border:1px #ccc solid;
+      border-radius: 10px;
+      background:#f4f4f4;
+      padding:10px;
+      }
+      #userWrapper{
+      float:left;
+      border:1px #ccc solid;
+      border-radius: 10px;
+      background:#f4f4f4;
+      padding:10px;
+      margin-left:20px;
+      width:150px;
+      max-height:200px;
+      }
+      #namesWrapper{
+      float:left;
+      border:1px #ccc solid;
+      border-radius: 10px;
+      background:#f4f4f4;
+      padding:10px;
+      margin-left:20px;
+      }
+      input{
+      height:30px;
+      border:solid 1px #ccc;
+      }
+      .form-control {
+      display: block;
+      width: 75%;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+      }
+      .btn-primary {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+      }
+  body
+    nav.navbar.navbar-inverse
+    .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only 
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Chat-App
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/contact') Contact
+        
+    .container
+    block content
+    
+   
